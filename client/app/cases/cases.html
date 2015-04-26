@@ -1,0 +1,21 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-8">
+<table class="table  table-condensed table-hover">
+	<tr>
+		<th>Name</th>
+		<th>Date Opened</th>
+		<th>Type</th>
+	</tr>
+	<tr ng-repeat="x in cases" ng-click="setSelected(x._id);">
+		<td>{{x.name.last}}, {{x.name.first}}</td>
+		<td>{{x.opened}}</td>
+		<td>{{x.type}}</td>
+	</tr>
+
+</table>
+</div>
+<div class="col-md-2"></div>
+</div>
