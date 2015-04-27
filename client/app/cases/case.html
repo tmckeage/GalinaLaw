@@ -8,9 +8,31 @@
   		  <div class="col-md-6">{{case.name.last}}, {{case.name.first}}</div>
   		  <div class="text-right col-md-6" ng-bind="formatDate(case.opened) | date:'MM/dd/yyyy'"></div>
   		</div>
+  		<div class="row">
+  			<div class="col-md-12">{{case.address}}</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-12">{{case.phone}}</div>
+  		</div>
+  		<div class="row">
+  			<div class="col-md-12">{{case.email}}</div>
+  		</div>
   	</div>
-  	<div style="background-color: thistle">fooooo</div>
-  	<div style="background-color: beige">fooooo</div>
+  	</br>
+  	<div>
+  	    <tabset>
+          <tab heading="Static title">
+            <tab-heading>Notes</tab-heading>
+            <div style="background-color: thistle">fooooo</div>
+          </tab>
+          <tab>
+            <tab-heading>Tasks</tab-heading>
+            <div style="background-color: beige">fooooo</div>
+          </tab>
+        </tabset>
+    </div>
+  	
+  	
   </div>
   <div class="col-md-2"></div>
 </div>
