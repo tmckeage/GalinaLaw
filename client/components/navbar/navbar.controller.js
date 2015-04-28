@@ -2,10 +2,16 @@
 
 angular.module('galinaApp')
   .controller('NavbarCtrl', function ($scope, $location, Auth) {
-    $scope.menu = [{
+    $scope.menu = [
+    {
       'title': 'Home',
       'link': '/'
-    }];
+    },
+    {
+      'title': 'Cases',
+      'link': '/cases'
+    }
+    ];
 
     $scope.isCollapsed = true;
     $scope.isLoggedIn = Auth.isLoggedIn;
