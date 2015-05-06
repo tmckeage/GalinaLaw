@@ -34,12 +34,13 @@
             <tab-heading>Tasks</tab-heading>
             <ul class="list-group">
             	<li ng-repeat="task in case.tasks" class="list-group-item">
-            	    <div class="row">
+                <galtask></galtask>
+            	    <!--<div class="row">
             	    	<div class="col-md-3"  >
             	    		<p>Due Date: <span ng-bind="formatDate(task.date) | date:'MM/dd/yyyy'"></span></p>
             	    	</div>
             	    	<div class="col-md-10">{{task.description}}</div>
-            	    </div>
+            	    </div> -->
             	</li>
             </ul>
           </tab>
